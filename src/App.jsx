@@ -12,7 +12,7 @@ function App() {
     setCards([]);
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?apikey=f7e7aca&s=${request}&type=${type}`
+        `https://www.omdbapi.com/?apikey=f7e7aca&s=${request}&type=${type}`
       );
       const result = await response.json();
       if (Object.hasOwn(result, "Search")) {
